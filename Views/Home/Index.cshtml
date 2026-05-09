@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="container py-5">
+    <div class="row align-items-center py-5">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+            <span class="badge bg-soft-primary text-primary px-3 py-2 rounded-pill mb-3 fw-bold">
+                <i class="fa-solid fa-rocket me-2"></i>Geleceğin Veri Yönetimi
+            </span>
+            <h1 class="display-4 fw-extrabold text-dark mb-4" style="letter-spacing: -1px;">
+                MonoBase ile Verilerinizi <span class="text-primary">Özgür Bırakın.</span>
+            </h1>
+            <p class="lead text-muted mb-5">
+                MonoBase Test uygulaması, modern .NET teknolojileri ve esnek NoSQL mimarisiyle geliştirilmiş, hız ve verimlilik odaklı bir not yönetim sistemidir.
+            </p>
+            <div class="d-flex gap-3">
+                <a asp-controller="Notes" asp-action="Index" class="btn btn-primary btn-lg px-5 rounded-pill shadow-sm fw-bold">
+                    Hemen Başla <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+                
+            </div>
+        </div>
+        <div class="col-lg-6 text-center">
+            <div class="position-relative">
+                <div class="bg-primary opacity-10 position-absolute top-50 start-50 translate-middle rounded-circle" style="width: 400px; height: 400px;"></div>
+                <i class="fa-solid fa-database text-primary shadow-lg p-5 bg-white" style="font-size: 8rem; border-radius: 40px;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="row py-5 mt-5">
+        <div class="col-12 text-center mb-5">
+            <h2 class="fw-bold">Neden MonoBase?</h2>
+            <p class="text-muted">Geliştiriciler için geliştirilmiş, esnek ve güvenli altyapı.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm p-4 text-center hover-up">
+                <div class="icon-box mb-3 mx-auto bg-soft-primary">
+                    <i class="fa-solid fa-bolt text-primary fs-3"></i>
+                </div>
+                <h5 class="fw-bold">Yüksek Performans</h5>
+                <p class="text-muted small">Düşük gecikme süresiyle verilerinize anında erişin ve yönetin.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm p-4 text-center hover-up">
+                <div class="icon-box mb-3 mx-auto bg-soft-success">
+                    <i class="fa-solid fa-shield-halved text-success fs-3"></i>
+                </div>
+                <h5 class="fw-bold">Güvenli API Altyapısı</h5>
+                <p class="text-muted small">API Key tabanlı güvenlik sistemi ile verileriniz her zaman koruma altında.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm p-4 text-center hover-up">
+                <div class="icon-box mb-3 mx-auto bg-soft-info">
+                    <i class="fa-solid fa-code text-info fs-3"></i>
+                </div>
+                <h5 class="fw-bold">Esnek Şema (NoSQL)</h5>
+                <p class="text-muted small">Tablo yapısına bağlı kalmadan, JSON formatında özgürce veri depolayın.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row py-5 bg-white rounded-5 shadow-sm mt-5 px-4">
+        <div class="col-md-6 border-end">
+            <h3 class="fw-bold mb-3">MonoBase Test Nedir?</h3>
+            <p class="text-secondary">Bu uygulama, MonoBase API altyapısının yeteneklerini sergilemek amacıyla oluşturulmuştur. .NET Core MVC mimarisi üzerine inşa edilmiş olup, CRUD (Oluşturma, Okuma, Güncelleme, Silme) işlemlerini tamamen asenkron bir yapıda gerçekleştirir.</p>
+        </div>
+        <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
+            <h3 class="fw-bold mb-3">Teknoloji Yığını</h3>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border px-3 py-2">ASP.NET Core MVC</span>
+                <span class="badge bg-light text-dark border px-3 py-2">Entity Framework Core</span>
+                <span class="badge bg-light text-dark border px-3 py-2">RESTful API</span>
+                <span class="badge bg-light text-dark border px-3 py-2">Bootstrap 5</span>
+                <span class="badge bg-light text-dark border px-3 py-2">HttpClient</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .fw-extrabold { font-weight: 800; }
+    .bg-soft-primary { background-color: rgba(67, 97, 238, 0.1); }
+    .bg-soft-success { background-color: rgba(46, 204, 113, 0.1); }
+    .bg-soft-info { background-color: rgba(52, 152, 219, 0.1); }
+    
+    .icon-box {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+    }
+
+    .hover-up {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-up:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    }
+
+    .rounded-5 { border-radius: 2rem !important; }
+</style>
